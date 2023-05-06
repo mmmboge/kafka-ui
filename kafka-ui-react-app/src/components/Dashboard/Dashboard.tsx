@@ -58,8 +58,9 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     if (appInfo.hasDynamicConfig && !clusters.data) {
-      navigate(clusterNewConfigPath);
-    }
+       console.log("集群信息:", clusters);
+      // navigate(clusterNewConfigPath);
+	}
   }, [clusters, appInfo.hasDynamicConfig]);
 
   return (
