@@ -108,9 +108,6 @@ const NavBar: React.FC<Props> = ({ onBurgerClick, setDarkMode }) => {
             UI for Apache Kafka
           </S.Hyperlink>
 
-          <S.NavbarItem>
-            <Version />
-          </S.NavbarItem>
         </S.NavbarBrand>
       </S.NavbarBrand>
       <S.NavbarSocial>
@@ -120,18 +117,6 @@ const NavBar: React.FC<Props> = ({ onBurgerClick, setDarkMode }) => {
           onChange={onChangeThemeMode}
           isThemeMode
         />
-        <S.SocialLink
-          href="https://github.com/provectus/kafka-ui"
-          target="_blank"
-        >
-          <GitIcon />
-        </S.SocialLink>
-        <S.SocialLink
-          href="https://discord.com/invite/4DWzD7pGE5"
-          target="_blank"
-        >
-          <DiscordIcon />
-        </S.SocialLink>
         <UserInfo />
       </S.NavbarSocial>
     </S.Navbar>
