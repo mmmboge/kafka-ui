@@ -1,7 +1,7 @@
 version: '3'
 services:
   kafka-server:
-    image: damon/kafka:latest
+    image: damon/kafka:v1
     hostname: kafka-server
     ports:
       - 9092:9092
